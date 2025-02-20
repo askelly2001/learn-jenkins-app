@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         NETLIFY_SITE_ID = 'b18f703e-88e8-4708-8659-54bba20ac135'
-        NETLIFY_AUTH_TOKEN = credentials('Netlify Token')
+        NETLIFY_AUTH_TOKEN = credentials('NETLIFY-TOKEN')
     }
 
     stages {
