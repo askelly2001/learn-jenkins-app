@@ -102,6 +102,7 @@ pipeline {
                 }
             }
             steps {
+                input 'Ready to deploy?'
                 sh '''
                     npm install netlify-cli
                     node_modules/.bin/netlify --version
@@ -128,7 +129,6 @@ pipeline {
                 sh '''
                     npx playwright test  --reporter=html
                 '''
-                input 'Ready to deploy?'
             }
 
             post {
