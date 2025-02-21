@@ -128,6 +128,7 @@ pipeline {
                 sh '''
                     npx playwright test  --reporter=html
                 '''
+                input 'Ready to deploy?'
             }
 
             post {
